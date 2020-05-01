@@ -1,0 +1,402 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C42D38C2458890900F42775 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42D38B2458890900F42775 /* AppDelegate.swift */; };
+		4C42D3902458890D00F42775 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C42D38F2458890D00F42775 /* Assets.xcassets */; };
+		4C42D3932458890D00F42775 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C42D3912458890D00F42775 /* Main.storyboard */; };
+		4C42D3A02459454300F42775 /* Mouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42D39F2459454300F42775 /* Mouse.swift */; };
+		4C42D3A82459896D00F42775 /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4C42D3A72459896D00F42775 /* OpenCVWrapper.mm */; };
+		4C42D3C12459B79F00F42775 /* OpenCL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C42D3C02459B79F00F42775 /* OpenCL.framework */; };
+		4C42D3C32459B7B300F42775 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C42D3C22459B7B300F42775 /* Accelerate.framework */; };
+		4C42D3C52459B7D000F42775 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C42D3C42459B7D000F42775 /* opencv2.framework */; };
+		4C42D3CB2459DF4300F42775 /* NSImage-extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42D3CA2459DF4300F42775 /* NSImage-extension.swift */; };
+		4C42D3CD245AA70C00F42775 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42D3CC245AA70C00F42775 /* ViewController.swift */; };
+		4C8A2164245B3E3400C78083 /* ImageConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8A2163245B3E3400C78083 /* ImageConversion.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4C42D3AB24598A2100F42775 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4C42D3882458890900F42775 /* hackcolor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hackcolor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C42D38B2458890900F42775 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4C42D38F2458890D00F42775 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4C42D3922458890D00F42775 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4C42D3942458890D00F42775 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C42D3952458890D00F42775 /* hackcolor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = hackcolor.entitlements; sourceTree = "<group>"; };
+		4C42D39F2459454300F42775 /* Mouse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mouse.swift; sourceTree = "<group>"; };
+		4C42D3A52459896C00F42775 /* hackcolor-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "hackcolor-Bridging-Header.h"; sourceTree = "<group>"; };
+		4C42D3A62459896D00F42775 /* OpenCVWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapper.h; sourceTree = "<group>"; };
+		4C42D3A72459896D00F42775 /* OpenCVWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
+		4C42D3BB2459B4C400F42775 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		4C42D3C02459B79F00F42775 /* OpenCL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenCL.framework; path = System/Library/Frameworks/OpenCL.framework; sourceTree = SDKROOT; };
+		4C42D3C22459B7B300F42775 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		4C42D3C42459B7D000F42775 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = "../../../../Downloads/opencv-4.2.0/osx/opencv2.framework"; sourceTree = "<group>"; };
+		4C42D3CA2459DF4300F42775 /* NSImage-extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSImage-extension.swift"; sourceTree = "<group>"; };
+		4C42D3CC245AA70C00F42775 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4C8A2163245B3E3400C78083 /* ImageConversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageConversion.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C42D3852458890900F42775 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C42D3C52459B7D000F42775 /* opencv2.framework in Frameworks */,
+				4C42D3C32459B7B300F42775 /* Accelerate.framework in Frameworks */,
+				4C42D3C12459B79F00F42775 /* OpenCL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C42D37F2458890900F42775 = {
+			isa = PBXGroup;
+			children = (
+				4C42D38A2458890900F42775 /* hackcolor */,
+				4C42D3892458890900F42775 /* Products */,
+				4C42D3BF2459B79F00F42775 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4C42D3892458890900F42775 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C42D3882458890900F42775 /* hackcolor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C42D38A2458890900F42775 /* hackcolor */ = {
+			isa = PBXGroup;
+			children = (
+				4C42D3BB2459B4C400F42775 /* opencv2.framework */,
+				4C42D38B2458890900F42775 /* AppDelegate.swift */,
+				4C42D38F2458890D00F42775 /* Assets.xcassets */,
+				4C42D3912458890D00F42775 /* Main.storyboard */,
+				4C42D3942458890D00F42775 /* Info.plist */,
+				4C42D3952458890D00F42775 /* hackcolor.entitlements */,
+				4C42D39F2459454300F42775 /* Mouse.swift */,
+				4C42D3A62459896D00F42775 /* OpenCVWrapper.h */,
+				4C42D3A72459896D00F42775 /* OpenCVWrapper.mm */,
+				4C42D3A52459896C00F42775 /* hackcolor-Bridging-Header.h */,
+				4C42D3CA2459DF4300F42775 /* NSImage-extension.swift */,
+				4C42D3CC245AA70C00F42775 /* ViewController.swift */,
+				4C8A2163245B3E3400C78083 /* ImageConversion.swift */,
+			);
+			path = hackcolor;
+			sourceTree = "<group>";
+		};
+		4C42D3BF2459B79F00F42775 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C42D3C42459B7D000F42775 /* opencv2.framework */,
+				4C42D3C22459B7B300F42775 /* Accelerate.framework */,
+				4C42D3C02459B79F00F42775 /* OpenCL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C42D3872458890900F42775 /* hackcolor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C42D3982458890D00F42775 /* Build configuration list for PBXNativeTarget "hackcolor" */;
+			buildPhases = (
+				4C42D3842458890900F42775 /* Sources */,
+				4C42D3852458890900F42775 /* Frameworks */,
+				4C42D3862458890900F42775 /* Resources */,
+				4C42D3AB24598A2100F42775 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = hackcolor;
+			productName = hackcolor;
+			productReference = 4C42D3882458890900F42775 /* hackcolor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C42D3802458890900F42775 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = Sam;
+				TargetAttributes = {
+					4C42D3872458890900F42775 = {
+						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
+					};
+				};
+			};
+			buildConfigurationList = 4C42D3832458890900F42775 /* Build configuration list for PBXProject "hackcolor" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4C42D37F2458890900F42775;
+			productRefGroup = 4C42D3892458890900F42775 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C42D3872458890900F42775 /* hackcolor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C42D3862458890900F42775 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C42D3902458890D00F42775 /* Assets.xcassets in Resources */,
+				4C42D3932458890D00F42775 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C42D3842458890900F42775 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C42D3CB2459DF4300F42775 /* NSImage-extension.swift in Sources */,
+				4C8A2164245B3E3400C78083 /* ImageConversion.swift in Sources */,
+				4C42D38C2458890900F42775 /* AppDelegate.swift in Sources */,
+				4C42D3A82459896D00F42775 /* OpenCVWrapper.mm in Sources */,
+				4C42D3A02459454300F42775 /* Mouse.swift in Sources */,
+				4C42D3CD245AA70C00F42775 /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4C42D3912458890D00F42775 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C42D3922458890D00F42775 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4C42D3962458890D00F42775 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4C42D3972458890D00F42775 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		4C42D3992458890D00F42775 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = hackcolor/hackcolor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VWWLJFYU63;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/hackcolor",
+				);
+				INFOPLIST_FILE = hackcolor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sam.com.hackcolor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "hackcolor/hackcolor-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4C42D39A2458890D00F42775 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = hackcolor/hackcolor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VWWLJFYU63;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/hackcolor",
+				);
+				INFOPLIST_FILE = hackcolor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sam.com.hackcolor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "hackcolor/hackcolor-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C42D3832458890900F42775 /* Build configuration list for PBXProject "hackcolor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C42D3962458890D00F42775 /* Debug */,
+				4C42D3972458890D00F42775 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C42D3982458890D00F42775 /* Build configuration list for PBXNativeTarget "hackcolor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C42D3992458890D00F42775 /* Debug */,
+				4C42D39A2458890D00F42775 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4C42D3802458890900F42775 /* Project object */;
+}
